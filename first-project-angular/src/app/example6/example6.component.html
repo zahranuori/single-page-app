@@ -1,1 +1,15 @@
-<p>example6 works!</p>
+<!--اینجا از پراترتی بایندینگ استفاده کردیم تا اطلاعات رو از فایل ts بگیره و در html نمایش بده -->
+<h1 [hidden]="userName === '' ">Welcome {{userName}}</h1>
+<p [hidden]="userName !== ''"> Please Enter Your Username</p>
+<hr>
+<label>Username : </label>
+<input type="text" (input)="onUsernameInputChanged($event)">
+<br>
+<label>Enter Password :</label>
+<input type="password" (input)="onPasswordInputChanged($event)">
+<br>
+<label>Retype Password :</label>
+<input type="password" (input)="onRetypePasswordInputChanged($event)">
+<br>
+<label [hidden]="!isPasswordMatch">password match *_* </label>
+<label [hidden]="isPasswordMatch || password === '' ">Password do not match</label>
