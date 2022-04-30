@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class InputBoxComponent implements OnInit {
   user: string = "Reza";
 
+  // <!--event binding (event)="function" فانکشن نمایش اینپونت در پاراگراف -->
   public onInputChange(e : Event){
     this.user = (<HTMLInputElement>e.target).value;
     // برای شناختن ولیو باید نوع تارگت رو مشخص کنیم که تگ ما از نوع htmlInputElemnt بود و باید باتگ بالا شناخته میشد

@@ -1,4 +1,8 @@
 <!--string interpolation TS => HTML {{var}} -->
 <p>{{user}}</p>
-<button>Add User</button>
-<input type="text" (input)="onInputChange($event)">
+<!--CM event binding (event)="function" -->
+<!--<input type="text" (input)="onInputChange($event)">-->
+
+<!--CM to way binding ([ngModel)]="var" برای اینکه انجی مدل را بشناسد باید بریم توو فایل app.module.ts و اونجا ایمپورتش کنیم-->
+<input type="text" [(ngModel)]="user">
+<button class="btn-success">Add User</button>
