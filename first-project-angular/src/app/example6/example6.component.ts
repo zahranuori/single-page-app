@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {flatMap} from "rxjs";
 
 @Component({
   selector: 'app-example6',
