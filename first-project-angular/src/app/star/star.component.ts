@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-star',
@@ -6,12 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./star.component.css']
 })
 export class StarComponent implements OnInit {
-  width: number = 130;
-  rating : number = 3.5;
+
+  @Input() rating : number = 1;
+  width: number = 110;
+
   constructor() { }
 
   ngOnInit(): void {
-    this.width = this.rating * 130 / 6;
+    this.width = this.rating * 90 / 5;
   }
 
 }

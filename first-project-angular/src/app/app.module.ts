@@ -12,6 +12,9 @@ import {AttributeBindingComponent} from "./attribute-binding/attribute-binding.c
 import { DirectivesComponent } from './directives/directives.component';
 import { InputOutputIntroComponent } from './input-output-intro/input-output-intro.component';
 import { StarComponent } from './star/star.component';
+import { DecouplingComponent } from './decoupling/decoupling.component';
+import { AdduserComponent } from './adduser/adduser.component';
+import { UsertableComponent } from './usertable/usertable.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { StarComponent } from './star/star.component';
     AttributeBindingComponent,
     DirectivesComponent,
     InputOutputIntroComponent,
-    StarComponent
+    StarComponent,
+    DecouplingComponent,
+    AdduserComponent,
+    UsertableComponent
   ],
   imports: [
     BrowserModule,
