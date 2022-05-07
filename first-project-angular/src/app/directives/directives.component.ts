@@ -16,7 +16,7 @@ export class DirectivesComponent implements OnInit {
   styles = {}
   classes = {}
   users : string[] = ['zahra','reza','masom','meli'];
-  contact : string[] = ['arash','nima','ava','avin']
+  contact : string[] = ['sara','nima','ava','avin']
   userObj : any = [
     { id:1 ,name : "molod"},
     { id:2 ,name : "mahtab"},

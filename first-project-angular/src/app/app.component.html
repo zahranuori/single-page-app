@@ -1,13 +1,42 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!--<app-header></app-header>-->
-<!--<app-input-box></app-input-box>-->
-<!--<app-example6></app-example6>-->
-<!--<app-copy></app-copy>-->
-<!--<app-attribute-binding></app-attribute-binding>-->
-<!--<app-directives></app-directives>-->
-<app-input-output-intro></app-input-output-intro>
+<!-- <app-header></app-header> -->
+<!-- <app-input-box></app-input-box> -->
+<!-- <app-example6></app-example6> -->
+<!-- <app-copy></app-copy> -->
+<!-- <app-attribute-binding></app-attribute-binding> -->
+<!-- <app-directives></app-directives> -->
+<!-- <app-input-output-intro></app-input-output-intro> -->
 <!--<app-star *ngFor="let rete of rating" [rating]="rete"></app-star>-->
 <!--<app-star *ngFor="let user of rating" ></app-star>-->
 
-<app-decoupling></app-decoupling>
+<!-- class selector -->
+<!-- <div class="app-input-output-intro"></div> -->
+
+<!-- property selector -->
+<!-- <div app-decoupling></div> -->
+
+<!-- <app-local-reference></app-local-reference> -->
+
+<app-ng-content>
+    <h2 id="text">{{name}} is developer</h2>
+
+   <table class="warning">
+       <tr>
+        <th>name</th>
+        <th>family</th>
+        <th>age</th>
+       </tr>
+       <tr>
+        <td>{{name}}</td>
+        <td>naderi rad</td>
+        <td>26</td>
+       </tr>
+   </table>
+   <hr>
+   <h2 class="text">{{name}} is developer</h2>
+
+
+</app-ng-content>
+<!-- <app-inc></app-inc> -->
+<!-- <app-viewchid-encapsulation></app-viewchid-encapsulation> -->
 <router-outlet></router-outlet>

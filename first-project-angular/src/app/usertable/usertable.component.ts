@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { user } from '../decoupling/decopling-interface';
 
 @Component({
   selector: 'app-usertable',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsertableComponent implements OnInit {
 
+  @Input() users : user[] = [];
   constructor() { }
 
   ngOnInit(): void {

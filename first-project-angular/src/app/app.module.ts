@@ -15,6 +15,10 @@ import { StarComponent } from './star/star.component';
 import { DecouplingComponent } from './decoupling/decoupling.component';
 import { AdduserComponent } from './adduser/adduser.component';
 import { UsertableComponent } from './usertable/usertable.component';
+import { LocalReferenceComponent } from './local-reference/local-reference.component';
+import { IncComponent } from './inc/inc.component';
+import { ViewchidEncapsulationComponent } from './viewchid-encapsulation/viewchid-encapsulation.component';
+import { NgContentComponent } from './ng-content/ng-content.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import { UsertableComponent } from './usertable/usertable.component';
     StarComponent,
     DecouplingComponent,
     AdduserComponent,
-    UsertableComponent
+    UsertableComponent,
+    LocalReferenceComponent,
+    IncComponent,
+    ViewchidEncapsulationComponent,
+    NgContentComponent
   ],
   imports: [
     BrowserModule,

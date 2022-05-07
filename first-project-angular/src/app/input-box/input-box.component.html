@@ -1,8 +1,12 @@
 <!--string interpolation TS => HTML {{var}} -->
 <p>{{user}}</p>
-<!--CM event binding (event)="function" -->
+<br>
+<!-- property binding TS => HTML [property]='var' -->
+<button [disabled]="isEnabled">added</button>
+
+<!-- event binding HTML => TS (event)="function" -->
 <!--<input type="text" (input)="onInputChange($event)">-->
 
-<!--CM to way binding ([ngModel)]="var" برای اینکه انجی مدل را بشناسد باید بریم توو فایل app.module.ts و اونجا ایمپورتش کنیم-->
+<!-- to way binding HTML <=> TS ([ngModel)]="var" برای اینکه انجی مدل را بشناسد باید بریم توو فایل app.module.ts و اونجا ایمپورتش کنیم-->
 <input type="text" [(ngModel)]="user">
 <button class="btn-success">Add User</button>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { user } from '../decoupling/decopling-interface';
 
 @Component({
@@ -24,7 +24,9 @@ export class AdduserComponent implements OnInit {
       address: '911 fardis'
     },
   ];
-  constructor() { }
+ @Output() onAddUserClicked = new EventEmitter<user[]>();
+
+  // constructor() { }
 
   ngOnInit(): void {
   }
@@ -36,5 +38,6 @@ export class AdduserComponent implements OnInit {
       address: address
     };
     this.users.push(u)
+    this.onAddUserClicked.emit(this.users);
   }
 }

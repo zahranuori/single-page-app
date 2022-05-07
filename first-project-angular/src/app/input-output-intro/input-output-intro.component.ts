@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-input-output-intro',
+  // class selector
+  selector: '.app-input-output-intro',
+
   templateUrl: './input-output-intro.component.html',
   styleUrls: ['./input-output-intro.component.css']
 })

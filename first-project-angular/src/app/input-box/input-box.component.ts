@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputBoxComponent implements OnInit {
   user: string = "Reza";
-
+  isEnabled: boolean = true;
   // <!--event binding (event)="function" فانکشن نمایش اینپونت در پاراگراف -->
   public onInputChange(e : Event){
     this.user = (<HTMLInputElement>e.target).value;
